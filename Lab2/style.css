@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue: #007bff;
+    --gray: #737373;
+}
+
+html{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+button{
+    border: none;
+    outline: none;
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 60px;
+    color: var(--blue);
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+.__container{
+    max-width: 980px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*MAIN*/
+.main{
+    padding: 72px 0;
+    background-color: #f2f4f7;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    gap: 40px
+}
+
+.show{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.show h1{
+    padding-bottom: 16px;
+    cursor: default;
+}
+
+.show h2{
+    text-align: left;
+    width: 500px;
+}
+
+
+.form form{
+    width: 396px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form form > *{
+    width: 100%;
+}
+
+.form input{
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    width: 100%;
+}
+
+.form input:focus{
+    border: 1px solid var(--blue)
+}
+
+.form input, button{
+    border-radius: 6px;
+}
+
+.form form a{
+    color: var(--blue);
+    text-align: center;
+    font-size: 14px;
+}
+
+.form__forget{
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    padding: 14px 16px;
+    font-size: 17px;;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+.form__login{
+    background-color: var(--blue);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.form__forget{
+    color: var(--blue);
+    background-color: transparent;
+}
+
+.line{
+    height: 1px;
+    background-color: #DADDE1;
+    margin-bottom: 20px;
+}
+.form_signup{
+    background-color: #42b72a;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    padding: 14px 16px;
+}
+.form_signup-label{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1080px){
+    h2{
+        font-size: 24px;
+    }
+    .show{
+        max-width: 400px;
+    }
+    .show h2{
+        width: auto;
+    }
+}
+
+@media (max-width: 900px){
+    .main{
+        padding-top: 40px;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+    .show{
+        margin-top: 0;
+    }
+    .show h1{
+        text-align: center;
+    }
+    .show h2{
+        text-align: center;
+    }
+
+}
+
+
+.outside{
+    padding: 30px;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+footer li{
+    display: inline;
+    font-size: 12px;
+    color: var(--gray);
+}
+
+footer a{
+    color: var(--gray);
+}
+
+footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.language{
+    padding: 30px 0 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.addLanguage{
+    padding: 0 10px;
+    border: 1px solid var(--gray);
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.addLanguage:hover{
+    cursor: pointer;
+}
+
+.links{
+    margin-top: 20px;
+}
