@@ -197,9 +197,14 @@ h2{
 .outside{
     padding: 30px;
 }
+
+.outside a{
+    color: black
+}
+
 footer ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
     gap: 10px
 }
 
@@ -228,10 +233,11 @@ footer li:hover{
 
 .addLanguage{
     padding: 0 10px;
-    border: 1px solid var(--gray);
+    border: 1px solid #ccd0d5;
     border-radius: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    height: 20px;
 }
 
 .addLanguage:hover{
