@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #0E72E7;
+    color: white;
+}
+
+
+.header__content{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+ .header h1{
+    font-size: 24px;
+ }
+
+ .todo__header{
+     margin-top: 80px;
+     font-size: 36px;
+ }
+
+ .todo__input{
+     padding: 16px 72px;
+     display: flex;
+     gap: 16px;
+    width: 100%;
+ }
+
+ .todo__input input{
+     height: 40px;
+     width: 100%;
+     padding: 0 12px;
+     border-radius: 5px;
+     outline: none;
+     border: 1px solid #ccc;
+ }
+
+ .todo__input button{
+     height:40px;
+     padding: 0 12px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     outline: none;
+ }
+
+ .todo__list{
+    display: flex;
+     flex-direction: column;
+     gap: 16px;
+ }
+
+ .todo__item{
+     padding: 16px;
+    border: 1px solid #ccc;
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     justify-content: space-between;
+ }
+
+ .todo__item.done .todo__title{
+     text-decoration: line-through;
+ }
+
+ .todo__title{
+     flex: 1;
+ }
+
+ .todo__delete{
+     width: 24px;
+     height: 24px;
+ }
+
+ .todo__delete img{
+     width: 100%;
+ }
+
+ .todo__check{
+     width: 24px;
+     height: 24px;
+     border: 1px solid #ccc;
+ }
+
+
+ .todo__item.done .todo__check{
+     background-color: #0E72E7;
+ }
+
+
