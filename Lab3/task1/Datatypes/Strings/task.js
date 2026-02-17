@@ -1,27 +1,22 @@
-ucFirst("john") == "John";
 
-function ucFirst(word){
-  return word.charAt(0).toUpperCase() + word.slice(1);
+const ucFirst = (word) => {
+  return word[0].toUpperCase() + word.slice(1)
 }
 
-console.log(ucFirst("john"));
-
-const checkSpam = (str) => {
-  let lower = str.toLowerCase();
-  return lower.includes("viagra") || lower.includes("xxx");
+const checkSpam =  (word) => {
+  let lower = word.toLowerCase();
+  return lower.includes("viagra") || lower.includes("xxx")
 }
 
-checkSpam('buy ViAgRA now') == true
-checkSpam('free xxxxx') == true
-checkSpam("innocent rabbit") == false
+console.log(checkSpam('buy ViAgRA now'))
 
+const truncate = (word, num) => {
 
-function truncate(str, maxlength) {
-  return (str.length > maxlength) ?
-    str.slice(0, maxlength - 1) + '…' : str;
+  return word.length > 20 ? word.slice(0, 19) + ".." : word
 }
 
-
-function extractCurrencyValue(str) {
-  return +str.slice(1);
+const extractCurrencyValue = (word) => {
+  return parseInt(word.slice(1))
 }
+
+console.log(extractCurrencyValue("$120"))
