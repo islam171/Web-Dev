@@ -1,5 +1,5 @@
-import {Component, Input, input} from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
+import {Component, Input} from '@angular/core';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-star',
@@ -35,7 +35,6 @@ export class Star {
                 stars.push('empty');
             }
         }
-        console.log(stars);
         return stars
     }
 }

@@ -7,4 +7,6 @@ export interface ProductModel {
     image: string;
     images: string[],
     links: string,
+    likes: number,
+    categoryId: number
 }

@@ -1,15 +1,14 @@
-import {Component, Input, input} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {ProductModel} from "../../models/product-model";
-import {StarPipe} from "../../pipes/star/star";
 import {Star} from "../star/star";
 
 @Component({
-  selector: 'app-product-component',
+    selector: 'app-product-component',
     template: `
         <div class="product">
             <div class="product__img">
                 <img src="{{product.image}}" alt="">
-            </div>
+            </div>  
             <div class="product__bottom">
                 <a [href]="product.links" target="_blank">
                     <h1 class="product__title">{{ product.name }}</h1>

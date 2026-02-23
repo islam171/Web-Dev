@@ -2,15 +2,26 @@ import {Component} from '@angular/core';
 import {ProductModel} from "../../models/product-model";
 import {ProductComponent} from "../product-component/product-component";
 import {NgForOf} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 @Component({
     selector: 'app-product-list-component',
     template: `
         <div class="wrapper">
+            <div class="search-container">
+                <label for="search">Search products</label>
+                <input
+                        [(ngModel)]="searchQuery"
+                        (input)="filterProducts()"
+                        id="search"
+                        type="text"
+                        placeholder="Search by product name..."
+                />
+            </div>
             <div class="product">
-                <div class="product__list" >
-                    <div class="product__item" *ngFor="let product of productList; let i = index">
-                        <app-product-component [product]="product" />
+                <div class="product__list">
+                    <div class="product__item" *ngFor="let product of filteredProducts; let i = index">
+                        <app-product-component [product]="product"/>
                     </div>
                 </div>
             </div>
@@ -20,11 +31,16 @@ import {NgForOf} from "@angular/common";
     `,
     imports: [
         ProductComponent,
-        NgForOf
+        NgForOf,
+        FormsModule
     ],
     styleUrls: ['product-list-component.css'],
 })
 export class ProductListComponent {
+
+    searchQuery = "";
+
+
     productList: ProductModel[] = [
         {
             id: 1,
@@ -166,5 +182,15 @@ export class ProductListComponent {
             links: "https://example.com/product/10",
         }
     ]
+
+    filteredProducts: ProductModel[] = this.productList;
+    filterProducts(): void {
+        const query = this.searchQuery.toLowerCase();
+        this.filteredProducts = this.productList.filter(product =>
+            product.name.toLowerCase().includes(query)
+        );
+    }
+
+    // filteredProducts = this.productList.filter((product: ProductModel) => product.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
 
 }
