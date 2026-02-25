@@ -1,14 +1,18 @@
 .filterItem{
     padding: 10px 0;
+    color: #ccc;
 }
 
 .filterItem__label{
     padding: 10px 0;
+    color: white;
 }
 
 .filterItem__main{
     padding: 10px 20px;
     background-color: #0E0E0E;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .filterItem__list{
@@ -20,7 +24,12 @@
     transition: all 0.25s allow-discrete;
 }
 
-.filterItem__list.active{
+.filterItem.active .filterItem__main{
+
+    background-color: #34224B;
+}
+
+.filterItem.active .filterItem__list{
     display: block;
     opacity: 1;
 }

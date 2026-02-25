@@ -12,3 +12,12 @@
     display: flex;
     gap: 20px
 }
+
+.header{
+    height: 60px;
+}
+
+
+.content{
+    padding-top: 30px;
+}

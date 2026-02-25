@@ -1,17 +1,20 @@
 import {Component, output} from '@angular/core';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-search',
-  imports: [FormsModule],
+    imports: [FormsModule, MatIcon, ReactiveFormsModule],
   templateUrl: './search.html',
   styleUrl: './search.css',
 })
 export class Search {
-    searchQuery = output<string>()
+    outputQuery = output<string>()
+    searchQuery = "";
 
 
-    emitEvent() {
-        this.searchQuery.emit('!'); // Emit the data
+    setSearchQuery(): void {
+        const query = this.searchQuery;
+        this.outputQuery.emit(query); // Emit the data
     }
 }

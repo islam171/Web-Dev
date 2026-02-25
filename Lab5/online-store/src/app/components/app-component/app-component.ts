@@ -4,12 +4,14 @@ import {ProductService} from "../../services/product/product.service";
 import {Sidebar} from "../sidebar/sidebar";
 import {ProductModel} from "../../models/product.model";
 import {Subscription} from "rxjs";
+import {Header} from "../header/header";
 
 @Component({
   selector: 'app-app-component',
     imports: [
         ProductListComponent,
-        Sidebar
+        Sidebar,
+        Header
     ],
   templateUrl: './app-component.html',
   styleUrl: './app-component.css',
@@ -34,5 +36,9 @@ export class AppComponent implements OnInit {
 
     select(s: number){
         this.products = this.productService.getDataByCategory(s);
+    }
+
+    search(query: string){
+        this.products = this.products.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
     }
 }

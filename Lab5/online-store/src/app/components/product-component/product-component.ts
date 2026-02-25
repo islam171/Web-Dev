@@ -3,11 +3,12 @@ import {ProductModel} from "../../models/product.model";
 import {Star} from "../star/star";
 
 import {MatIconModule} from '@angular/material/icon';
+import {Title} from "../title/title";
 
 @Component({
     selector: 'app-product-component',
     templateUrl: './product-component.html',
-    imports: [Star, MatIconModule],
+    imports: [Star, MatIconModule, Title],
     styleUrls: ['product-component.css'],
 })
 export class ProductComponent {

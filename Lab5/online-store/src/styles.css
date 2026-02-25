@@ -9,3 +9,10 @@ body{
     background-color: #0E0E0E;
     color: #FFFFFF;
 }
+
+:root{
+    --primary: #0E0E0E;
+    --secondary: #1C1C1C;
+    --radius: 10px;
+    --blue: #5A2E96;
+}
