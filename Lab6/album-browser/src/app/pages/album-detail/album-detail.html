@@ -1,0 +1,45 @@
+<div class="album-detail">
+
+    <div class="card">
+        <div class="top">
+            <div>
+                <h1>Album Details</h1>
+                <p class="muted">Edit album title and navigate to photos.</p>
+            </div>
+            <div class="pill">ID: {{ album()?.id }}</div>
+
+        </div>
+
+        <div class="view">
+
+            <div class="field">
+                <div>Album ID:</div>
+                <div class="readonly">{{ album()?.id }}</div>
+            </div>
+
+            <div class="field">
+                <div>User ID:</div>
+                <div class="readonly">{{ album()?.userId }}</div>
+            </div>
+
+            <div class="field">
+                <div>Title:</div>
+                <div class="readonly">{{ album()?.title }}</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <form class="form span-2" [formGroup]="albumForm">
+                <label>Title (editable)</label>
+                <input class="input" [value]="album()?.title" formControlName="title"/>
+                <small class="hint">Change the title and press “Save”.</small>
+            </form>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-primary" (click)="submitHandler()">Save</button>
+            <a class="btn btn-ghost" routerLink="/albums/{{album()?.id}}/photos">View Photos</a>
+            <a class="btn btn-ghost" routerLink="/albums">Back</a>
+        </div>
+    </div>
+</div>

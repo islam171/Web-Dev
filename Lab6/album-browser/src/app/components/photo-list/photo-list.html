@@ -1,0 +1,27 @@
+<div class="page">
+    <div class="wrap">
+        <div class="header">
+            <div>
+                <h1>Album Photos</h1>
+                <p class="muted">Album ID: {{ album?.id }}</p>
+            </div>
+
+            <a class="btn btn-ghost" routerLink="/albums/{{album?.id}}">
+                Back
+            </a>
+        </div>
+
+        <!-- loading -->
+<!--        <div class="loading">-->
+<!--            <div class="spinner"></div>-->
+<!--            <span>Loading photos...</span>-->
+<!--        </div>-->
+
+        <!-- grid -->
+        <div class="grid">
+            @for (photo of photos; track photo.id) {
+                <app-photo-item [photo]="photo"/>
+            }
+        </div>
+    </div>
+</div>

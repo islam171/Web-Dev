@@ -1,0 +1,15 @@
+<div class="page">
+    <div class="header">
+        <div>
+            <h1>Albums</h1>
+            <p>Browse and manage your albums collection.</p>
+        </div>
+
+        <div class="actions">
+            <input class="search" id="search" #search type="text" placeholder="Search albums..."/>
+            <button class="btn btn-ghost">Refresh</button>
+        </div>
+    </div>
+
+    <app-album-list [albumList]="filtredAlbumList()" (onDeleteId)="onDelete($event)"/>
+</div>

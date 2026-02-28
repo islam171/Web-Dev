@@ -1,0 +1,41 @@
+.about-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card h1 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ff5e62;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e14b50;
+}

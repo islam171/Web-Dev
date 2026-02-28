@@ -1,0 +1,13 @@
+@if (album) {
+    <div class="item">
+        <div class="left">
+            <div class="badge"># {{ album && album.id }}</div>
+            <a [routerLink]="[album.id]" class="title">{{ album && album.title }}</a>
+        </div>
+
+        <button class="btn btn-danger" (click)="onDelete(album.id)">
+            Delete
+        </button>
+    </div>
+}
+

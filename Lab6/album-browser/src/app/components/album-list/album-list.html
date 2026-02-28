@@ -1,0 +1,20 @@
+    <div class="list">
+
+        @for (album of albumList; track album.id) {
+            <app-album-item [album]="album" (onDeleteId)="onDelete($event)"/>
+        }
+
+<!--        <div class="loading" >-->
+<!--            <div class="spinner"></div>-->
+<!--            <span>Loading albums...</span>-->
+<!--        </div>-->
+
+        <!-- empty -->
+        @if (albumList && albumList.length == 0) {
+            <div class="empty">
+                <div class="empty-icon">📁</div>
+                <h3>No albums yet</h3>
+                <p>Try refreshing or check your API connection.</p>
+            </div>
+        }
+    </div>

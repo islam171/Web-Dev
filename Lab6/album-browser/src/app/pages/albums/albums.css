@@ -1,0 +1,68 @@
+
+.page {
+    min-height: 100vh;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin: 18px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header h1 {
+    margin: 0 0 6px;
+    font-size: 34px;
+    letter-spacing: 0.2px;
+}
+
+.header p {
+    margin: 0;
+    color: #a7b0c0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search {
+    width: 260px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06);
+    color: #e5e7eb;
+    outline: none;
+}
+
+.search::placeholder {
+    color: rgba(229,231,235,0.55);
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-weight: bold;
+    transition: 0.15s ease;
+}
+
+.btn-ghost {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    color: #e5e7eb;
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.10); }
+
+.btn-danger {
+    background: rgba(239,68,68,0.16);
+    border: 1px solid rgba(239,68,68,0.35);
+    color: #fecaca;
+}
+.btn-danger:hover { background: rgba(239,68,68,0.22); }
