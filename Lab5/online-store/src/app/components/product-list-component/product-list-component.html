@@ -2,7 +2,7 @@
     <div class="product">
         <div class="product__list" >
             <div class="product__item" *ngFor="let product of productList; let i = index">
-                <app-product-component [product]="product" (productId)="delete($event)" />
+                <app-product-component [product]="product" (productId)="delete($event)" (favorite)="addFavorite($event)" (like)="addLiked($event)" />
             </div>
         </div>
     </div>

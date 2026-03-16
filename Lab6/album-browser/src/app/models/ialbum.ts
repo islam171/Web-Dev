@@ -3,3 +3,8 @@ export interface IAlbum {
     id: string;
     title: string;
 }
+
+export interface IAlbumCreate {
+    userId: number;
+    title: string;
+}

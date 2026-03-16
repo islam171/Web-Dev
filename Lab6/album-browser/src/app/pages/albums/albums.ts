@@ -28,11 +28,11 @@ export class Albums implements OnInit, AfterViewInit {
 
 
     ngOnInit() {
-        this.albumService.getAlbums().subscribe(
-            albums => {
-                this.albumList.set(albums);
-            }
-        )
+        this.albumService.ensureAlbumsLoaded();
+        this.albumService.albums$.subscribe(albums => {
+            this.albumList.set(albums ?? []);
+        })
+
     }
 
     onDelete(id: string) {
@@ -46,7 +46,6 @@ export class Albums implements OnInit, AfterViewInit {
     constructor() {
         this.route.queryParams.subscribe(params => {
             const searchParams = params['search'] || '';
-            console.log(searchParams);
             this.query.set(searchParams);
         })
     }
@@ -57,7 +56,6 @@ export class Albums implements OnInit, AfterViewInit {
             debounceTime(1000),
             distinctUntilChanged()
         ).subscribe((value: string)=> {
-            console.log(value)
             this.router.navigate([], {
                 queryParams: {search: value}
             });

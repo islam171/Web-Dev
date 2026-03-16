@@ -1,6 +1,7 @@
 <div class="photo">
     <div class="img">
-        <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+        <img [src]="photo.thumbnailUrl.replace('https://via.placeholder.com', 'https://dummyimage.com')" [alt]="photo.title" />
     </div>
+    {{photo.thumbnailUrl}}
     <div class="caption">{{ photo.title }}</div>
 </div>

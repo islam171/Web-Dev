@@ -1,17 +1,31 @@
 <div class="wrapper">
-    <app-header (outputQuery)="search($event)"/>
+    <app-header/>
     <main>
         <div class="layout">
             <div class="sidebar">
                 <app-sidebar (selection)="select($event)"/>
             </div>
             <div class="content">
-                @if (products) {
-                    <app-product-list-component [productList]="products" (productId)="delete($event)"/>
+                <div class="favoriteList">
+                    <h1>Favorite</h1>
+                    @if (favoriteProducts()) {
+                        <app-product-list-component [productList]="favoriteProducts()" (productId)="delete($event)"
+                                                    (favorite)="addFavorite($event)" />
+                    } @else {
+                        <div>none</div>
+                    }
+                </div>
 
-                }@else{
-                    <div>none</div>
-                }
+                <div class="products">
+                    <h1>Products</h1>
+                    @if (products()) {
+                        <app-product-list-component [productList]="products()" (productId)="delete($event)"
+                                                    (favorite)="addFavorite($event)"  (like)="addLiked($event)" )/>
+
+                    } @else {
+                        <div>none</div>
+                    }
+                </div>
             </div>
         </div>
 

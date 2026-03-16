@@ -21,3 +21,19 @@
 .content{
     padding-top: 30px;
 }
+
+.favoriteList{
+    padding: 20px 0;
+}
+
+.favoriteList h1{
+    padding: 10px 0;
+}
+
+.products{
+    padding: 20px 0;
+}
+
+.products h1{
+    padding: 10px 0;
+}

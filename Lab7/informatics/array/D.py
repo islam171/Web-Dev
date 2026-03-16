@@ -1,0 +1,7 @@
+a = int(input())
+b =0
+c = input().split(" ")
+for i in range(1, a):
+    if(int(c[i]) > int(c[i-1])):
+        b += 1
+print(b)

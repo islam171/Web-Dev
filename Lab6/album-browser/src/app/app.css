@@ -18,7 +18,7 @@ header{
 
 .header > :nth-child(1),
 .header > :nth-child(1){
-    width: 200px;
+    width: 300px;
 }
 
 nav ul{

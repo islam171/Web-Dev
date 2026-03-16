@@ -8,5 +8,6 @@ export interface ProductModel {
     images: string[],
     links: string,
     likes: number,
-    categoryId: number
+    categoryId: number,
+    isFavorite: boolean,
 }

@@ -34,7 +34,8 @@ export class ProductService {
             ],
             links: "https://kaspi.kz/shop/p/apple-iphone-17-pro-256gb-oranzhevyi-145467625/?c=750000000",
             categoryId: 1,
-            likes: 5
+            likes: 5,
+            isFavorite: false
         },
         {
             id: 2,
@@ -50,7 +51,8 @@ export class ProductService {
             ],
             links: "https://kaspi.kz/shop/p/apple-iphone-15-128gb-chernyi-113137790/?c=750000000",
             categoryId: 1,
-            likes: 1
+            likes: 1,
+            isFavorite: false
         },
         {
             id: 3,
@@ -67,7 +69,8 @@ export class ProductService {
             ],
             links: "https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000",
             likes: 20,
-            categoryId: 1
+            categoryId: 1,
+            isFavorite: false
         },
         {
             id: 4,
@@ -83,7 +86,8 @@ export class ProductService {
             ],
             links: "https://kaspi.kz/shop/p/samsung-galaxy-s25-5g-12-gb-256-gb-sinii-133433811/?c=750000000",
             likes: 50,
-            categoryId: 1
+            categoryId: 1,
+            isFavorite: false
         },
         {
             id: 5,
@@ -98,7 +102,8 @@ export class ProductService {
             ],
             links: "https://kaspi.kz/shop/p/samsung-galaxy-s25-5g-12-gb-256-gb-sinii-133433811/?c=750000000",
             categoryId: 1,
-            likes: 10
+            likes: 10,
+            isFavorite: false
         },
         {
             id: 6,
@@ -114,6 +119,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/apple-macbook-pro-14-2024-14-2-24-gb-ssd-512-gb-macos-mx2h3-137220149/?c=750000000",
             categoryId: 2,
             likes: 75,
+            isFavorite: false
         },
         {
             id: 7,
@@ -129,6 +135,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/apple-macbook-air-13-2025-16-gb-ssd-256-gb-macos-mw123-137582956/?c=750000000",
             categoryId: 2,
             likes: 30,
+            isFavorite: false
         },
         {
             id: 8,
@@ -144,6 +151,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/asus-rog-strix-g18-18-32-gb-ssd-1024-gb-bez-os-90nr0lm1-m00200-143479081/?c=750000000",
             categoryId: 2,
             likes: 55,
+            isFavorite: false
         },
         {
             id: 9,
@@ -161,6 +169,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/asus-proart-p16-16-64-gb-m-2-4000-gb-win-11-pro-h7606wx-se002x-153888660/?c=750000000",
             categoryId: 2,
             likes: 15,
+            isFavorite: false
         },
         {
             id: 10,
@@ -178,6 +187,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/lenovo-loq-15irx10-15-6-32-gb-ssd-512-gb-bez-os-83je00rmrk-153706912/?c=750000000&m=Mechta",
             categoryId: 2,
             likes: 45,
+            isFavorite: false
         },
         {
             id: 11,
@@ -193,6 +203,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/lg-43lm5772pla-109-sm-chernyi-101293496/?c=750000000",
             categoryId: 3,
             likes: 25,
+            isFavorite: false
         },
         {
             id: 12,
@@ -208,6 +219,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/lg-65ua75009la-165-sm-chernyi-138403485/?c=750000000",
             categoryId: 3,
             likes: 30,
+            isFavorite: false
         },
         {
             id: 13,
@@ -223,6 +235,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/lg-43nano80a6b-109-sm-chernyi-138971688/?c=750000000",
             categoryId: 3,
             likes: 5,
+            isFavorite: false
         },
         {
             id: 14,
@@ -239,6 +252,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/samsung-ue43t5300auxce-109-sm-chernyi-100182013/?c=750000000",
             categoryId: 3,
             likes: 23,
+            isFavorite: false
         },
         {
             id: 15,
@@ -254,6 +268,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/samsung-ue65u8000fuxce-165-sm-chernyi-145434862/?c=750000000",
             categoryId: 3,
             likes: 37,
+            isFavorite: false
         },
         {
             id: 16,
@@ -269,6 +284,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/naushniki-jbl-tune-510bt-chernyi-101420081/?c=750000000",
             categoryId: 4,
             likes: 18,
+            isFavorite: false
         },
         {
             id: 17,
@@ -284,6 +300,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/naushniki-jbl-tune-720bt-sinii-111087498/?c=750000000",
             categoryId: 4,
             likes: 30,
+            isFavorite: false
         },
         {
             id: 18,
@@ -299,6 +316,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/naushniki-samsung-galaxy-buds-core-chernyi-142551258/?c=750000000",
             categoryId: 4,
             likes: 61,
+            isFavorite: false
         },
         {
             id: 19,
@@ -314,6 +332,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/naushniki-samsung-buds-3-seryi-123383427/?c=750000000",
             categoryId: 4,
             likes: 13,
+            isFavorite: false
         },
         {
             id: 20,
@@ -329,6 +348,7 @@ export class ProductService {
             links: "https://kaspi.kz/shop/p/naushniki-apple-airpods-4-belyi-124333372/?c=750000000",
             categoryId: 4,
             likes: 229,
+            isFavorite: false
         }
     ]
 

@@ -1,6 +1,6 @@
 <div class="product">
     <div class="product__img">
-
+        <mat-icon class="favorite" [class.active]="product.isFavorite" (click)="addFavorite(product.id)">star</mat-icon>
         <img src="{{product.image}}" alt="">
     </div>
     <div class="product__bottom">
@@ -12,7 +12,7 @@
             <div class="stars">
                 <app-star [rating]="product.rating"/>
             </div>
-            <div class="like" [class.active]="isLiked" (click)="like()">
+            <div class="like" [class.active]="isLiked" (click)="addLiked(product.id)">
                 <div class="count">{{product.likes}}</div>
                 <mat-icon class="heart">favorite</mat-icon>
 

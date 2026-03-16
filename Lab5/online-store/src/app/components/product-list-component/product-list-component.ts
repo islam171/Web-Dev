@@ -1,4 +1,4 @@
-import {Component, Input, output} from '@angular/core';
+import {Component, EventEmitter, Input, Output, output} from '@angular/core';
 import {ProductComponent} from "../product-component/product-component";
 import {NgForOf} from "@angular/common";
 import {ProductModel} from "../../models/product.model";
@@ -14,6 +14,16 @@ import {ProductModel} from "../../models/product.model";
 })
 export class ProductListComponent {
     @Input() productList: ProductModel[] = [];
+    @Output() favorite = new EventEmitter<number>();
+    @Output() like = new EventEmitter<number>();
+
+    addFavorite(id: number){
+        this.favorite.emit(id)
+    }
+
+    addLiked(id: number){
+        this.like.emit(id)
+    }
 
     productId = output<number>()
 
