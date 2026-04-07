@@ -13,6 +13,160 @@
           "name": "categories",
           "item": [
             {
+              "name": "generics",
+              "item": [
+                {
+                  "name": "categories",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/category",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "category"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/category/3",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "category",
+                        "3"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"MAuse\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/category",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "category"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/category8/",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "category8",
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"PhMAone\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/category/8/",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "category",
+                        "8",
+                        ""
+                      ],
+                      "query": [
+                        {
+                          "key": "name",
+                          "value": "meats",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
               "name": "categories",
               "request": {
                 "method": "GET",
@@ -41,7 +195,7 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "http://127.0.0.1:8000/api/categories/5",
+                  "raw": "http://127.0.0.1:8000/api/categories/8",
                   "protocol": "http",
                   "host": [
                     "127",
@@ -53,7 +207,7 @@
                   "path": [
                     "api",
                     "categories",
-                    "5"
+                    "8"
                   ]
                 }
               },
@@ -66,7 +220,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"name\": \"TV1\"\r\n}",
+                  "raw": "{\r\n    \"name\": \"MAuse\"\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -98,7 +252,7 @@
                 "method": "DELETE",
                 "header": [],
                 "url": {
-                  "raw": "http://127.0.0.1:8000/api/categories/6/",
+                  "raw": "http://127.0.0.1:8000/api/categories/8/",
                   "protocol": "http",
                   "host": [
                     "127",
@@ -110,7 +264,7 @@
                   "path": [
                     "api",
                     "categories",
-                    "6",
+                    "8",
                     ""
                   ]
                 }
@@ -124,7 +278,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"name\": \"TV3\"\r\n}",
+                  "raw": "{\r\n    \"name\": \"PhMAone\"\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -132,7 +286,7 @@
                   }
                 },
                 "url": {
-                  "raw": "http://127.0.0.1:8000/api/categories/6/",
+                  "raw": "http://127.0.0.1:8000/api/categories/8/",
                   "protocol": "http",
                   "host": [
                     "127",
@@ -144,7 +298,7 @@
                   "path": [
                     "api",
                     "categories",
-                    "6",
+                    "8",
                     ""
                   ],
                   "query": [
@@ -189,12 +343,652 @@
           "name": "products",
           "item": [
             {
+              "name": "fbv",
+              "item": [
+                {
+                  "name": "products",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/fbv/products",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "fbv",
+                        "products"
+                      ],
+                      "query": [
+                        {
+                          "key": "ordering",
+                          "value": "price",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "category",
+                          "value": "3",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/fbv/products/26",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "fbv",
+                        "products",
+                        "26"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"apple macbook1\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/fbv/products/",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "fbv",
+                        "products",
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/fbv/products/26",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "fbv",
+                        "products",
+                        "26"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"price\": \"300000.00\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/fbv/products/24",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "fbv",
+                        "products",
+                        "24"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "mixins",
+              "item": [
+                {
+                  "name": "products",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/mixins/products",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "mixins",
+                        "products"
+                      ],
+                      "query": [
+                        {
+                          "key": "ordering",
+                          "value": "price",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "category",
+                          "value": "3",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/mixins/products/26",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "mixins",
+                        "products",
+                        "26"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"apple macbook1\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/mixins/products/",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "mixins",
+                        "products",
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/mixins/products/26",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "mixins",
+                        "products",
+                        "26"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"price\": \"300000.00\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/mixins/products/24",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "mixins",
+                        "products",
+                        "24"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "generics",
+              "item": [
+                {
+                  "name": "products",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/products",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "products"
+                      ],
+                      "query": [
+                        {
+                          "key": "ordering",
+                          "value": "price",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "category",
+                          "value": "3",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/products/37",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "products",
+                        "37"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"apple macbook5\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/products/",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "products",
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/products/37",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "products",
+                        "37"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"price\": \"300000.00\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/generics/products/24",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "generics",
+                        "products",
+                        "24"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "cbv",
+              "item": [
+                {
+                  "name": "products",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/cbv/products",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "cbv",
+                        "products"
+                      ],
+                      "query": [
+                        {
+                          "key": "ordering",
+                          "value": "price",
+                          "type": "text",
+                          "disabled": true
+                        },
+                        {
+                          "key": "category",
+                          "value": "3",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/cbv/products/25",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "cbv",
+                        "products",
+                        "25"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"apple macbook2\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/cbv/products/",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "cbv",
+                        "products",
+                        ""
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/cbv/products/25",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "cbv",
+                        "products",
+                        "25"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "product",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"apple macbook3\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/api/cbv/products/36",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "api",
+                        "cbv",
+                        "products",
+                        "36"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
               "name": "products",
               "request": {
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "http://127.0.0.1:8000/api/products/",
+                  "raw": "http://127.0.0.1:8000/api/products/?is_active=1",
                   "protocol": "http",
                   "host": [
                     "127",
@@ -207,6 +1001,23 @@
                     "api",
                     "products",
                     ""
+                  ],
+                  "query": [
+                    {
+                      "key": "is_active",
+                      "value": "1"
+                    },
+                    {
+                      "key": "ordering",
+                      "value": "price",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "category",
+                      "value": "3",
+                      "disabled": true
+                    }
                   ]
                 }
               },
@@ -237,13 +1048,37 @@
               "response": []
             },
             {
+              "name": "product active",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/products/active",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "products",
+                    "active"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
               "name": "product",
               "request": {
                 "method": "POST",
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"name\": \"apple macbook\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
+                  "raw": "{\r\n    \"name\": \"apple macbook1\",\r\n    \"price\": \"500000.00\",\r\n    \"count\": 8,\r\n    \"is_active\": true,\r\n    \"description\": \"apple\",\r\n    \"category\": 4\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -275,7 +1110,7 @@
                 "method": "DELETE",
                 "header": [],
                 "url": {
-                  "raw": "http://127.0.0.1:8000/api/products/5/",
+                  "raw": "http://127.0.0.1:8000/api/products/2/",
                   "protocol": "http",
                   "host": [
                     "127",
@@ -287,7 +1122,7 @@
                   "path": [
                     "api",
                     "products",
-                    "5",
+                    "2",
                     ""
                   ]
                 }
@@ -325,14 +1160,6 @@
                     ""
                   ]
                 }
-              },
-              "response": []
-            },
-            {
-              "name": "products Copy",
-              "request": {
-                "method": "GET",
-                "header": []
               },
               "response": []
             }
