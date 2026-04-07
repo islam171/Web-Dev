@@ -13,5 +13,6 @@ urlpatterns = [
     path("generics/products/", views.ProductListAPIViewGeneric.as_view()),
     path("generics/products/<int:id>", views.ProductDetailAPIViewGeneric.as_view()),
     path("generics/category/", views.CategoryListAPIViewGeneric.as_view()),
-    path("generics/category/<int:id>", views.CategoryDetailAPIViewGeneric.as_view())
+    path("generics/category/<int:id>", views.CategoryDetailAPIViewGeneric.as_view()),
+    path("generics/category/<int:id>/products", views.CategoryProductAPIView.as_view())
 ]
