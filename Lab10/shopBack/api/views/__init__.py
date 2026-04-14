@@ -1,4 +1,5 @@
-from .fbv import product_detail, product_list
-from .cbv import ProductListAPIView, ProductDetailAPIView
-from .mixins import ProductListMixinView, ProductDetailMixinView
-from .generics import ProductListAPIViewGeneric, ProductDetailAPIViewGeneric, CategoryDetailAPIViewGeneric,CategoryListAPIViewGeneric, CategoryProductAPIView
+from .fbv import product_detail, product_list, active_products, expensive_products
+from .cbv import ProductListAPIView, ProductDetailAPIView, ActiveProductListAPIView as activeProductCBV, ExpensiveProductListAPIView as expensiveProductCBV
+from .mixins import ProductListMixinView, ProductDetailMixinView,ActiveProductListAPIView as activeProductMixins, ExpensiveProductListAPIView as expensiveProductMixins
+from .generics import ProductListAPIViewGeneric, ProductDetailAPIViewGeneric, CategoryDetailAPIViewGeneric,CategoryListAPIViewGeneric, CategoryProductAPIView, ActiveProductListAPIView as activeProductGen, ExpensiveProductListAPIView as expensiveProductGen
+

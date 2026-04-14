@@ -43,3 +43,21 @@ def product_detail(request, id):
         product.delete()
         return Response({"message": "Product was deleted"}, status = status.HTTP_204_NO_CONTENT)
     return None
+
+@api_view(["GET", "POST"])
+def active_products(request):
+    if request.method == 'GET':
+        queryset = Product.objects.all()
+        queryset = queryset.filter(is_active=True)
+        serializer = ProductSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+@api_view(["GET", "POST"])
+def expensive_products(request):
+    if request.method == 'GET':
+        queryset = Product.objects.all()
+        queryset = queryset.filter(price__gte=1000000)
+        serializer = ProductSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+

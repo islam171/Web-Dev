@@ -45,3 +45,17 @@ class ProductDetailAPIView(APIView):
         if serializer.is_valid():
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+class ActiveProductListAPIView(APIView):
+    def get(self, request):
+        products = Product.objects.filter(is_active=True)
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)
+
+class ExpensiveProductListAPIView(APIView):
+    def get(self, request):
+        products = Product.objects.filter(price__gt=1000)
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)

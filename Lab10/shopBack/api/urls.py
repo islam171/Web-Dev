@@ -14,5 +14,13 @@ urlpatterns = [
     path("generics/products/<int:id>", views.ProductDetailAPIViewGeneric.as_view()),
     path("generics/category/", views.CategoryListAPIViewGeneric.as_view()),
     path("generics/category/<int:id>", views.CategoryDetailAPIViewGeneric.as_view()),
-    path("generics/category/<int:id>/products", views.CategoryProductAPIView.as_view())
+    path("generics/category/<int:id>/products", views.CategoryProductAPIView.as_view()),
+    path('fbv/products/active/', views.active_products),
+    path('fbv/products/expensive/', views.expensive_products),
+    path('cbv/products/active/', views.activeProductCBV.as_view()),
+    path('cbv/products/expensive/', views.expensiveProductCBV.as_view()),
+    path('mixins/products/active/', views.activeProductMixins.as_view()),
+    path('mixins/products/expensive/', views.expensiveProductMixins.as_view()),
+    path('generics/products/active/', views.activeProductGen.as_view()),
+    path('generics/products/expensive/', views.expensiveProductGen.as_view()),
 ]
